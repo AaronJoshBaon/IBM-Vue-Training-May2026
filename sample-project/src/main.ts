@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
 import './style.css'
-import TaskCounter from "./views/TaskCounter.vue"
+import TaskListView from "./views/Day2/TaskListView.vue"
 
-createApp(TaskCounter).mount('#app')
+createApp(TaskListView).mount('#app')
