@@ -56,7 +56,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // TODO 1: Import your view components
 import HomeView       from '@/views/Day3/HomeView.vue'
-import TaskDetailView from '@/views/Day3/TaskDetailView.vue'
+import TaskListView from '@/views/Day4/TaskListView.vue'
 import AboutView      from '@/views/Day3/AboutView.vue'
 
 // TODO 2: Import your Pinia task store so the guard can check if a task exists
@@ -67,14 +67,14 @@ const routes = [
   { path: '/', redirect: '/home' },
 
   // TODO 4: Add the /home route
-  { path: '/home', component: HomeView },
+  { path: '/home', component: TaskListView },
 
   // TODO 5: Add the /task/:id dynamic route
   // Add meta: { requiresTask: true } so the guard knows to protect it
-  { path: '/task/:id', component: TaskDetailView, meta: { requiresTask: true } },
+  // { path: '/task/:id', component: TaskDetailView, meta: { requiresTask: true } },
 
   // TODO 6: Add the /about route
-  { path: '/about', component: AboutView },
+  // { path: '/about', component: AboutView },
 ]
 
 const router = createRouter({
