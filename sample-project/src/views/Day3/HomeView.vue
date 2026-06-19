@@ -33,7 +33,6 @@ const showErrorBanner = computed(() => {
     </nav>
 
     <!-- TODO 4: Render each task as a RouterLink to /task/:id -->
-    
       <ul class="task-list">
         <li v-for="task in taskStore.tasks" :key="task.id">
           <RouterLink :to="`/task/${task.id}`">
